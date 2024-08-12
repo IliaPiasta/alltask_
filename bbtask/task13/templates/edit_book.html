@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Edit Book</title>
+</head>
+<body>
+    <h1>Edit Book</h1>
+    <form method="post">
+        Title: <input type="text" name="title" value="{{ book.title }}" required><br>
+        Author: <input type="text" name="author" value="{{ book.author }}" required><br>
+        Year: <input type="number" name="year" value="{{ book.year }}" required><br>
+        <input type="submit" value="Save Changes">
+    </form>
+    <a href="{{ url_for('index') }}">Back to List</a>
+</body>
+</html>

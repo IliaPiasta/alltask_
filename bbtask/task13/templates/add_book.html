@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Add Book</title>
+</head>
+<body>
+    <h1>Add Book</h1>
+    <form method="post">
+        Title: <input type="text" name="title" required><br>
+        Author: <input type="text" name="author" required><br>
+        Year: <input type="number" name="year" required><br>
+        <input type="submit" value="Add Book">
+    </form>
+    <a href="{{ url_for('index') }}">Back to List</a>
+</body>
+</html>
